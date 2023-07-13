@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import styles from './movieDetails.module.css'
 import { useParams } from 'react-router-dom';
 import getfetchResults from '../../../utils/getfetchResults'
-import Rating from '../rating/Rating'
+import Rating from './Rating'
 import Comments from '../reviews/Comments'
 import { baseComments } from '../../../constants/base'
 

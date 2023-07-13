@@ -1,0 +1,19 @@
+.detailsContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;  /* Esto permite que si achicamos la pantalla o utilizamos un smartphone todo se acomode para abajo */
+}
+
+.col {
+    max-width: 400px;    /* Establecemos el maximo ancho del flex */
+    margin: 15px;
+    height: auto;
+}
+
+.movieImage {
+    border-radius: 15px;  /* Redondeamos el borde */
+}
+
+.movieDetails {
+    font-size: 1.5rem;
+}

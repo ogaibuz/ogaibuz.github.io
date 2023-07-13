@@ -1,0 +1,30 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+
+.card {
+  padding: 2em;
+}
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.lista {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.boton {
+  background-color: #740000;
+  padding: 1%;
+  margin: 5px;  
+  color: white;
+  border: 1px solid #740000;
+  border-radius: 5%;
+}
+

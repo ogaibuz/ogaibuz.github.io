@@ -3,8 +3,6 @@ import {FaStar} from 'react-icons/fa'
 
 const Rating  = ({ addComment, commentsCount }) => {
 
-    //const [mostrarSegundoComponente, setMostrarSegundoComponente] = useState(false)
-
     const [rating, setRating] = useState({ actualRating:0,})
     const [nameState, setNameState] = useState({name: ''})
     const [paisState, setPaisState] = useState({pais: ''})
@@ -41,10 +39,8 @@ const Rating  = ({ addComment, commentsCount }) => {
             setRating({ actualRating:0,});
             setNameState({name: ''});
             setComentState({coment: ''})
+            setPaisState({pais:''})
 
-            //setMostrarSegundoComponente(true)
-            
-    
             console.log("Sending...");
     
                
@@ -105,12 +101,12 @@ const Rating  = ({ addComment, commentsCount }) => {
 
               <div className="row ml-5 mr-5">
                   <label htmlFor='pais'>Pais</label>
-                  <input type="text" name="pais" id="pais" className='form-control' value={comentState.pais} onChange={updateStatePais} />
+                  <input type="text" name="pais" id="pais" className='form-control' value={paisState.pais} onChange={updateStatePais} />
               </div>
 
               <div className="row ml-5 mr-5">
                   <label htmlFor='comment'>Comentario</label>
-                  <input type="text" name="coment" id="coment" className='form-control' value={comentState.companyName} onChange={updateStateComment} />
+                  <input type="text" name="coment" id="coment" className='form-control' value={comentState.coment} onChange={updateStateComment} />
               </div>
 
               <div className="row ml-5 mr-5">

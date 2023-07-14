@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 import getfetchResults from '../utils/getfetchResults'
 import Comments from '../assets/componentes/reviews/Comments'
 import Rating from './../assets/componentes/rating/Rating'
-import { baseComments } from '../data/base.js'
+import { prevcomments } from '../data/base.js'
 
 const MovieDetails = () => {
 
@@ -31,9 +31,9 @@ const MovieDetails = () => {
       // Si no hay comentarios guardados en el storage
       if (storedComments.length === 0) {
         // Establezco algunos comentarios por defecto, se ejecuta apenas se carga el componente
-        localStorage.setItem('baseComments', JSON.stringify(baseComments));
-        console.log(baseComments)
-        setComments(baseComments)} else {
+        localStorage.setItem('comments', JSON.stringify(prevcomments));
+        console.log(prevcomments)
+        setComments(prevcomments)} else {
       // guardo en una variable el store de todos los comentarios
         setComments(storedComments);
         }
@@ -50,7 +50,7 @@ const MovieDetails = () => {
       const addComment = (comment) => {
         const newComments = [...comments, comment];
         setComments(newComments);
-        localStorage.setItem('baseComments', JSON.stringify(newComments));
+        localStorage.setItem('comments', JSON.stringify(newComments));
       };
   
   const imgUrl = "https://image.tmdb.org/t/p/w500" + movie.poster_path;

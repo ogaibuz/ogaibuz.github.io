@@ -1,4 +1,4 @@
-export const baseComments = [
+export const prevcomments = [
       {
         id: 1,
         name: "Julie",

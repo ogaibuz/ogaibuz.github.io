@@ -72,10 +72,10 @@ const MovieDetails = () => {
         </div>
         <div className={styles.detailsContainer}>
               <div className='row'>
-                <div className="col-6 col-sm-6 col-md-6 col-lg-6">
+                <div>
                   <Rating addComment={addComment} commentsCount={comments.length}/>
                 </div>
-                <div className="col-6 col-sm-6 col-md-6 col-lg-6">
+                <div>
                   <Comments comments={comments}/>
                 </div>
               </div>

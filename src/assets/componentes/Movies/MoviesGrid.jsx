@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import MovieCard from "./MovieCard";
 import styles from "./MoviesGrid.module.css"
 import { useEffect } from "react";
-import { useParams } from "react-router-dom";
 import getfetchResults from "../../../utils/getfetchResults";
 
 const MoviesGrid = () => {

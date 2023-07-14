@@ -11,9 +11,7 @@ export class Header extends Component {
               <h3 className='text-center'>📽Películas</h3>
             </Link>
             <p className="text-center">
-                Desde aquí podrá valorar y calificar las películas, 
-                así como también contactarse con nosotros 
-                para resolver cualquier necesidad como cliente.
+                Página para calificar las películas 
             </p>
         </div>
       </div>

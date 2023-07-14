@@ -22,8 +22,9 @@ const Comments = ({ comments }) => {
                              return (
                               <li key={comment.id}>
                                   <strong> { comment.name } </strong>
-                                  from <i>{ comment.company.name }, </i>
-                                  <strong> starts { comment.starts }
+                                  from <i>{ comment.otros.pais }, </i><br/>
+                                  <i>"{ comment.otros.coment } " </i> <br/>
+                                  <strong> starts { comment.starts }<hr/>
                                   </strong>
                               </li>
                             

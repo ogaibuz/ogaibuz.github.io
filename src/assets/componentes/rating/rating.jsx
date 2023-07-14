@@ -7,7 +7,8 @@ const Rating  = ({ addComment, commentsCount }) => {
 
     const [rating, setRating] = useState({ actualRating:0,})
     const [nameState, setNameState] = useState({name: ''})
-    const [companyState, setCompanyState] = useState({companyName: ''})
+    const [paisState, setPaisState] = useState({pais: ''})
+    const [comentState, setComentState] = useState({coment: ''})
 
     // setState() es, en la mayoria de los casos, una operación asincrónica
     const cambiarRating = async (value) => {
@@ -28,8 +29,9 @@ const Rating  = ({ addComment, commentsCount }) => {
                 id: commentsCount + 1,
                 name: nameState.name ,
                 starts: rating.actualRating,
-                company: {
-                    name:companyState.companyName,
+                otros: {
+                    pais:paisState.pais,
+                    coment:comentState.coment,
                 }
             };
           
@@ -38,7 +40,7 @@ const Rating  = ({ addComment, commentsCount }) => {
 
             setRating({ actualRating:0,});
             setNameState({name: ''});
-            setCompanyState({companyName: ''})
+            setComentState({coment: ''})
 
             //setMostrarSegundoComponente(true)
             
@@ -53,8 +55,13 @@ const Rating  = ({ addComment, commentsCount }) => {
             console.log(event.target.value);
         }
 
-        const updateStateCompany = (event) =>{
-            setCompanyState({ companyName: event.target.value });
+        const updateStateComment = (event) =>{
+            setComentState({ coment: event.target.value });
+            console.log(event.target.value);
+        };
+
+        const updateStatePais = (event) =>{
+            setPaisState({ pais: event.target.value });
             console.log(event.target.value);
         };
         
@@ -97,8 +104,13 @@ const Rating  = ({ addComment, commentsCount }) => {
               </div>
 
               <div className="row ml-5 mr-5">
-                  <label htmlFor='comment'>Empresa</label>
-                  <input type="text" name="enterprise" id="enterprise" className='form-control' value={companyState.companyName} onChange={updateStateCompany} />
+                  <label htmlFor='pais'>Pais</label>
+                  <input type="text" name="pais" id="pais" className='form-control' value={comentState.pais} onChange={updateStatePais} />
+              </div>
+
+              <div className="row ml-5 mr-5">
+                  <label htmlFor='comment'>Comentario</label>
+                  <input type="text" name="coment" id="coment" className='form-control' value={comentState.companyName} onChange={updateStateComment} />
               </div>
 
               <div className="row ml-5 mr-5">

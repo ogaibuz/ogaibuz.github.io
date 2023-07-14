@@ -1,6 +1,6 @@
-import Header from '../header/header'
-import Footer  from '../footer/footer'
-import MoviesGrid from '../Movies/MoviesGrid'
+import Header from '../assets/componentes/header/header'
+import Footer  from '../assets/componentes/footer/footer'
+import MoviesGrid from '../assets/componentes/Movies/MoviesGrid'
 
 const LandingPage = () => {
     

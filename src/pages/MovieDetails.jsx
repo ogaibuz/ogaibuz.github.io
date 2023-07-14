@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react'
 import styles from './movieDetails.module.css'
 import { useParams } from 'react-router-dom';
 import getfetchResults from '../utils/getfetchResults'
-import Rating from '../assets/componentes/rating/Rating'
 import Comments from '../assets/componentes/reviews/Comments'
+import Rating from './../assets/componentes/rating/Rating'
 import { baseComments } from '../data/base.js'
 
 const MovieDetails = () => {

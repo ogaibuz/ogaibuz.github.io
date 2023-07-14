@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import {FaStar} from 'react-icons/fa'
-import Comments from '../reviews/Comments';
 
 const Rating  = ({ addComment, commentsCount }) => {
 

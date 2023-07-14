@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import styles from './movieCard.module.css'
+import styles from './MovieCard.module.css'
 
 const MovieCard = ({movie}) => {
 

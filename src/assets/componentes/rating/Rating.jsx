@@ -66,7 +66,7 @@ const Rating  = ({ addComment, commentsCount }) => {
 
   return (
     <>
-    |<div className='card'>
+    <div className='card'>
           <div className="card-body">
               <h5 className="card-title">Califique la película</h5>
           </div>

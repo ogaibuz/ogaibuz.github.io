@@ -1,0 +1,17 @@
+ h1 {
+    color: #333;
+    font-size: 36px;
+  }
+
+  p {
+    color: #666;
+    font-size: 18px;
+  }
+
+  .construction-img {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: auto;
+    margin-bottom: 30px;
+  }

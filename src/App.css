@@ -11,6 +11,10 @@
   padding: 2em;
 }
 
+body {
+  background-color:lightgray;
+}
+
 h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

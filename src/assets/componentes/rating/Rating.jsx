@@ -19,7 +19,7 @@ const Rating  = ({ addComment, commentsCount }) => {
 
          const sendCalification = () => {
    
-            const lastComentId = localStorage.getItem('baseCommenst');
+            const lastComentId = localStorage.getItem('comments_678512');
             const newId = lastComentId ? parseInt('id') + 1 : 1;
             console.log('El newID es', newId);
 

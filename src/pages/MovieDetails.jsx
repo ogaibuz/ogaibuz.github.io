@@ -26,7 +26,7 @@ const MovieDetails = () => {
     useEffect (() => {
       
       // Chequeo si existen comentarios guardados en el Storage
-      const storedComments = JSON.parse(localStorage.getItem('comments')) || [];
+      const storedComments = JSON.parse(localStorage.getItem(`comments_${movieId}`)) || [];
   
       // Si no hay comentarios guardados en el storage
       if (storedComments.length === 0) {
@@ -50,7 +50,7 @@ const MovieDetails = () => {
       const addComment = (comment) => {
         const newComments = [...comments, comment];
         setComments(newComments);
-        localStorage.setItem('comments', JSON.stringify(newComments));
+        localStorage.setItem(`comments_${movieId}`, JSON.stringify(newComments));
       };
   
   const imgUrl = "https://image.tmdb.org/t/p/w500" + movie.poster_path;

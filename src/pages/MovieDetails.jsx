@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import styles from './movieDetails.module.css'
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import getfetchResults from '../utils/getfetchResults'
 import Comments from '../assets/componentes/reviews/Comments'
 import Rating from './../assets/componentes/rating/Rating'
@@ -77,6 +77,13 @@ const MovieDetails = () => {
                 </div>
                 <div>
                   <Comments comments={comments}/>
+                </div>
+                <div>
+                <Link
+                  to="/"
+                  className='btn btn-secondary contact-button'
+                > Volver
+                </Link>
                 </div>
               </div>
             </div>
